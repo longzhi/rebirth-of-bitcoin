@@ -1,0 +1,2205 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Paymail 协议 - Metanet.press</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="本项目为「比特币重生：重返创世纪」计划，旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币 (BSV) 的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「创世纪」升级计划的到来。"><meta name="keywords" content="BSV,BSV社区,BitcoinSV社区,BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,比特币现金,比特币SV,区块链,中本聪愿景">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="imcoddy <imcoddy@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="recommendations.html" />
+    
+    
+    <link rel="prev" href="hd-wallet.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter-philosophy/">
+            
+                <a href="../chapter-philosophy/">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    比特币之道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter-philosophy/honesty.html">
+            
+                <a href="../chapter-philosophy/honesty.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    诚信为本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter-philosophy/roadmap.html">
+            
+                <a href="../chapter-philosophy/roadmap.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    路线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter-philosophy/onchain-scaling.html">
+            
+                <a href="../chapter-philosophy/onchain-scaling.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    链上扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../chapter-philosophy/back-to-genesis.html">
+            
+                <a href="../chapter-philosophy/back-to-genesis.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    重返创世纪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../chapter-philosophy/vision-of-satoshi.html">
+            
+                <a href="../chapter-philosophy/vision-of-satoshi.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    中本聪愿景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chapter-how-bitcoin-works/">
+            
+                <a href="../chapter-how-bitcoin-works/">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    比特币基本原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../chapter-how-bitcoin-works/overview.html">
+            
+                <a href="../chapter-how-bitcoin-works/overview.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    比特币的架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../chapter-how-bitcoin-works/basic-concept.html">
+            
+                <a href="../chapter-how-bitcoin-works/basic-concept.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    比特币常见概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    比特币钱包的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="backup-and-restore.html">
+            
+                <a href="backup-and-restore.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    钱包的备份和恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="hd-wallet.html">
+            
+                <a href="hd-wallet.html">
+            
+                    
+                        <b>4.1.2.</b>
+                    
+                    HD 钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.3" data-path="paymail.html">
+            
+                <a href="paymail.html">
+            
+                    
+                        <b>4.1.3.</b>
+                    
+                    Paymail 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="recommendations.html">
+            
+                <a href="recommendations.html">
+            
+                    
+                        <b>4.1.4.</b>
+                    
+                    比特币钱包推荐
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.4.1" data-path="ddpurse.html">
+            
+                <a href="ddpurse.html">
+            
+                    
+                        <b>4.1.4.1.</b>
+                    
+                    打点钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4.2" data-path="moneybutton.html">
+            
+                <a href="moneybutton.html">
+            
+                    
+                        <b>4.1.4.2.</b>
+                    
+                    MoneyButton
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4.3" data-path="simply-cash.html">
+            
+                <a href="simply-cash.html">
+            
+                    
+                        <b>4.1.4.3.</b>
+                    
+                    Simply Cash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter-transaction/">
+            
+                <a href="../chapter-transaction/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    比特币交易
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../chapter-transaction/transaction-structure.html">
+            
+                <a href="../chapter-transaction/transaction-structure.html">
+            
+                    
+                        <b>5.1.1.</b>
+                    
+                    比特币交易的结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../chapter-transaction/crypto-in-bitcoin.html">
+            
+                <a href="../chapter-transaction/crypto-in-bitcoin.html">
+            
+                    
+                        <b>5.1.2.</b>
+                    
+                    加密算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../chapter-transaction/private-key.html">
+            
+                <a href="../chapter-transaction/private-key.html">
+            
+                    
+                        <b>5.1.3.</b>
+                    
+                    比特币私钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../chapter-transaction/public-key.html">
+            
+                <a href="../chapter-transaction/public-key.html">
+            
+                    
+                        <b>5.1.4.</b>
+                    
+                    比特币公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../chapter-transaction/address.html">
+            
+                <a href="../chapter-transaction/address.html">
+            
+                    
+                        <b>5.1.5.</b>
+                    
+                    比特币地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../chapter-transaction/utxo.html">
+            
+                <a href="../chapter-transaction/utxo.html">
+            
+                    
+                        <b>5.1.6.</b>
+                    
+                    未花费交易输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../chapter-transaction/signature.html">
+            
+                <a href="../chapter-transaction/signature.html">
+            
+                    
+                        <b>5.1.7.</b>
+                    
+                    比特币签名
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.7.1" data-path="../chapter-transaction/p2pkh.html">
+            
+                <a href="../chapter-transaction/p2pkh.html">
+            
+                    
+                        <b>5.1.7.1.</b>
+                    
+                    P2PKH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7.2" data-path="../chapter-transaction/p2sh.html">
+            
+                <a href="../chapter-transaction/p2sh.html">
+            
+                    
+                        <b>5.1.7.2.</b>
+                    
+                    P2SH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7.3" data-path="../chapter-transaction/p2rph.html">
+            
+                <a href="../chapter-transaction/p2rph.html">
+            
+                    
+                        <b>5.1.7.3.</b>
+                    
+                    P2RPH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7.4" data-path="../chapter-transaction/p2ip.html">
+            
+                <a href="../chapter-transaction/p2ip.html">
+            
+                    
+                        <b>5.1.7.4.</b>
+                    
+                    P2IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../chapter-network/malleability.html">
+            
+                <a href="../chapter-network/malleability.html">
+            
+                    
+                        <b>5.1.8.</b>
+                    
+                    交易可塑性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.9" data-path="../chapter-network/timelocks.html">
+            
+                <a href="../chapter-network/timelocks.html">
+            
+                    
+                        <b>5.1.9.</b>
+                    
+                    时间锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.10" data-path="../chapter-network/op_return.html">
+            
+                <a href="../chapter-network/op_return.html">
+            
+                    
+                        <b>5.1.10.</b>
+                    
+                    OP_RETURN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.11" data-path="../chapter-transaction/broadcast-transaction.html">
+            
+                <a href="../chapter-transaction/broadcast-transaction.html">
+            
+                    
+                        <b>5.1.11.</b>
+                    
+                    广播交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chapter-block/">
+            
+                <a href="../chapter-block/">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    比特币区块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../chapter-block/block-structure.html">
+            
+                <a href="../chapter-block/block-structure.html">
+            
+                    
+                        <b>6.1.1.</b>
+                    
+                    区块的结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../chapter-block/block-confirmation.html">
+            
+                <a href="../chapter-block/block-confirmation.html">
+            
+                    
+                        <b>6.1.2.</b>
+                    
+                    区块确认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../chapter-block/importance-of-zero-conf.html">
+            
+                <a href="../chapter-block/importance-of-zero-conf.html">
+            
+                    
+                        <b>6.1.3.</b>
+                    
+                    零确认的重要性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../chapter-scripting/">
+            
+                <a href="../chapter-scripting/">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    比特币脚本系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../chapter-scripting/overview.html">
+            
+                <a href="../chapter-scripting/overview.html">
+            
+                    
+                        <b>7.1.1.</b>
+                    
+                    比特币脚本系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../chapter-scripting/turing-completeness.html">
+            
+                <a href="../chapter-scripting/turing-completeness.html">
+            
+                    
+                        <b>7.1.2.</b>
+                    
+                    比特币的图灵完备性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../chapter-scripting/programming-in-script.html">
+            
+                <a href="../chapter-scripting/programming-in-script.html">
+            
+                    
+                        <b>7.1.3.</b>
+                    
+                    比特币的脚本编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.3.1" data-path="../chapter-scripting/template.html">
+            
+                <a href="../chapter-scripting/template.html">
+            
+                    
+                        <b>7.1.3.1.</b>
+                    
+                    比特币交易模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3.2" data-path="../chapter-scripting/smart-contract.html">
+            
+                <a href="../chapter-scripting/smart-contract.html">
+            
+                    
+                        <b>7.1.3.2.</b>
+                    
+                    比特币智能合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3.3" data-path="../chapter-scripting/multisig.html">
+            
+                <a href="../chapter-scripting/multisig.html">
+            
+                    
+                        <b>7.1.3.3.</b>
+                    
+                    比特币多重签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3.4" data-path="../chapter-scripting/r-puzzle.html">
+            
+                <a href="../chapter-scripting/r-puzzle.html">
+            
+                    
+                        <b>7.1.3.4.</b>
+                    
+                    比特币 R-Puzzle 签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../chapter-scripting/raising-op-code-limits.html">
+            
+                <a href="../chapter-scripting/raising-op-code-limits.html">
+            
+                    
+                        <b>7.1.4.</b>
+                    
+                    提升操作符上限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../chapter-scripting/sunsetting-p2sh.html">
+            
+                <a href="../chapter-scripting/sunsetting-p2sh.html">
+            
+                    
+                        <b>7.1.5.</b>
+                    
+                    移除 P2SH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.6" data-path="../chapter-scripting/danger-of-segwit.html">
+            
+                <a href="../chapter-scripting/danger-of-segwit.html">
+            
+                    
+                        <b>7.1.6.</b>
+                    
+                    隔离见证的风险
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.7" data-path="../chapter-scripting/restoring-op_return.html">
+            
+                <a href="../chapter-scripting/restoring-op_return.html">
+            
+                    
+                        <b>7.1.7.</b>
+                    
+                    恢复 OP_RETURN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../chapter-network/">
+            
+                <a href="../chapter-network/">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    比特币网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../chapter-network/peer-to-peer.html">
+            
+                <a href="../chapter-network/peer-to-peer.html">
+            
+                    
+                        <b>8.1.1.</b>
+                    
+                    什么是点对点网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../chapter-network/overlayed-bitcoin-network.html">
+            
+                <a href="../chapter-network/overlayed-bitcoin-network.html">
+            
+                    
+                        <b>8.1.2.</b>
+                    
+                    双重的比特币网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../chapter-network/ip2ip.html">
+            
+                <a href="../chapter-network/ip2ip.html">
+            
+                    
+                        <b>8.1.3.</b>
+                    
+                    IP2IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4" data-path="../chapter-network/payment-channel.html">
+            
+                <a href="../chapter-network/payment-channel.html">
+            
+                    
+                        <b>8.1.4.</b>
+                    
+                    支付通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.5" data-path="../chapter-network/spv.html">
+            
+                <a href="../chapter-network/spv.html">
+            
+                    
+                        <b>8.1.5.</b>
+                    
+                    SPV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../chapter-mining/">
+            
+                <a href="../chapter-mining/">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    比特币挖矿
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../chapter-mining/running-bitcoin-node.html">
+            
+                <a href="../chapter-mining/running-bitcoin-node.html">
+            
+                    
+                        <b>9.1.1.</b>
+                    
+                    运行节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../chapter-mining/proof-of-work.html">
+            
+                <a href="../chapter-mining/proof-of-work.html">
+            
+                    
+                        <b>9.1.2.</b>
+                    
+                    工作量证明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../chapter-mining/miner-id.html">
+            
+                <a href="../chapter-mining/miner-id.html">
+            
+                    
+                        <b>9.1.3.</b>
+                    
+                    MinerID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.4" data-path="../chapter-mining/double-hash.html">
+            
+                <a href="../chapter-mining/double-hash.html">
+            
+                    
+                        <b>9.1.4.</b>
+                    
+                    双重哈希
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.5" data-path="../chapter-mining/professionalize.html">
+            
+                <a href="../chapter-mining/professionalize.html">
+            
+                    
+                        <b>9.1.5.</b>
+                    
+                    节点的专业化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.6" data-path="../chapter-mining/small-world-network.html">
+            
+                <a href="../chapter-mining/small-world-network.html">
+            
+                    
+                        <b>9.1.6.</b>
+                    
+                    小世界网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.7" data-path="../chapter-mining/competition.html">
+            
+                <a href="../chapter-mining/competition.html">
+            
+                    
+                        <b>9.1.7.</b>
+                    
+                    竞争的本质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.8" data-path="../chapter-mining/forks-and-consensus.html">
+            
+                <a href="../chapter-mining/forks-and-consensus.html">
+            
+                    
+                        <b>9.1.8.</b>
+                    
+                    分叉与共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.9" data-path="../chapter-mining/orphan-block.html">
+            
+                <a href="../chapter-mining/orphan-block.html">
+            
+                    
+                        <b>9.1.9.</b>
+                    
+                    孤块，钢与铁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.10" data-path="../chapter-mining/myths-of-decentralization.html">
+            
+                <a href="../chapter-mining/myths-of-decentralization.html">
+            
+                    
+                        <b>9.1.10.</b>
+                    
+                    去中心化的迷思
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../chapter-security/">
+            
+                <a href="../chapter-security/">
+            
+                    
+                        <b>10.1.</b>
+                    
+                    比特币安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1.1" data-path="../chapter-security/security-policy.html">
+            
+                <a href="../chapter-security/security-policy.html">
+            
+                    
+                        <b>10.1.1.</b>
+                    
+                    安全指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.2" data-path="../chapter-security/hot-storage.html">
+            
+                <a href="../chapter-security/hot-storage.html">
+            
+                    
+                        <b>10.1.2.</b>
+                    
+                    比特币热钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.3" data-path="../chapter-security/cold-storage.html">
+            
+                <a href="../chapter-security/cold-storage.html">
+            
+                    
+                        <b>10.1.3.</b>
+                    
+                    比特币冷钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.4" data-path="../chapter-security/hardwallet-storage.html">
+            
+                <a href="../chapter-security/hardwallet-storage.html">
+            
+                    
+                        <b>10.1.4.</b>
+                    
+                    比特币硬件钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.5" data-path="../chapter-security/secure-split-key.html">
+            
+                <a href="../chapter-security/secure-split-key.html">
+            
+                    
+                        <b>10.1.5.</b>
+                    
+                    安全拆分密钥技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../chapter-client/">
+            
+                <a href="../chapter-client/">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    比特币客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1" data-path="../chapter-client/stable-protocol.html">
+            
+                <a href="../chapter-client/stable-protocol.html">
+            
+                    
+                        <b>11.1.1.</b>
+                    
+                    稳定的协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1.1" data-path="../chapter-client/open-bsv-license.html">
+            
+                <a href="../chapter-client/open-bsv-license.html">
+            
+                    
+                        <b>11.1.1.1.</b>
+                    
+                    Open BSV license
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.2" data-path="../chapter-client/bitcoin-sv-node.html">
+            
+                <a href="../chapter-client/bitcoin-sv-node.html">
+            
+                    
+                        <b>11.1.2.</b>
+                    
+                    Bitcoin SV 客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.3" data-path="../chapter-client/nodes-on-top.html">
+            
+                <a href="../chapter-client/nodes-on-top.html">
+            
+                    
+                        <b>11.1.3.</b>
+                    
+                    Nodes On Top
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.3.1" data-path="../chapter-client/spv.html">
+            
+                <a href="../chapter-client/spv.html">
+            
+                    
+                        <b>11.1.3.1.</b>
+                    
+                    SPV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.3.2" data-path="../chapter-client/tokenized.html">
+            
+                <a href="../chapter-client/tokenized.html">
+            
+                    
+                        <b>11.1.3.2.</b>
+                    
+                    Tokenized
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.3.3" data-path="../chapter-client/planaria.html">
+            
+                <a href="../chapter-client/planaria.html">
+            
+                    
+                        <b>11.1.3.3.</b>
+                    
+                    Planaria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.3.4" data-path="../chapter-client/bitquery.html">
+            
+                <a href="../chapter-client/bitquery.html">
+            
+                    
+                        <b>11.1.3.4.</b>
+                    
+                    BitQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../chapter-metanet/">
+            
+                <a href="../chapter-metanet/">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    元网 Metanet
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1.1" data-path="../chapter-metanet/why-metanet.html">
+            
+                <a href="../chapter-metanet/why-metanet.html">
+            
+                    
+                        <b>12.1.1.</b>
+                    
+                    Metanet 的意义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.2" data-path="../chapter-metanet/specification.html">
+            
+                <a href="../chapter-metanet/specification.html">
+            
+                    
+                        <b>12.1.2.</b>
+                    
+                    Metanet 技术实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.3" data-path="../chapter-metanet/developer-guide.html">
+            
+                <a href="../chapter-metanet/developer-guide.html">
+            
+                    
+                        <b>12.1.3.</b>
+                    
+                    Metanet 开发者指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.4" data-path="../chapter-metanet/apps.html">
+            
+                <a href="../chapter-metanet/apps.html">
+            
+                    
+                        <b>12.1.4.</b>
+                    
+                    Metanet 的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.5" data-path="../chapter-metanet/prospect.html">
+            
+                <a href="../chapter-metanet/prospect.html">
+            
+                    
+                        <b>12.1.5.</b>
+                    
+                    Metanet 展望
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../chapter-laws/">
+            
+                <a href="../chapter-laws/">
+            
+                    
+                        <b>13.1.</b>
+                    
+                    比特币与法律
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1.1" data-path="../chapter-laws/bitcoin-is-within-laws.html">
+            
+                <a href="../chapter-laws/bitcoin-is-within-laws.html">
+            
+                    
+                        <b>13.1.1.</b>
+                    
+                    法律中的比特币
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.2" data-path="../chapter-laws/consensus.html">
+            
+                <a href="../chapter-laws/consensus.html">
+            
+                    
+                        <b>13.1.2.</b>
+                    
+                    乌合之众的共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.3" data-path="../chapter-laws/anarchism-and-utopia.html">
+            
+                <a href="../chapter-laws/anarchism-and-utopia.html">
+            
+                    
+                        <b>13.1.3.</b>
+                    
+                    无政府主义与乌托邦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.4" data-path="../chapter-laws/anonymity-and-privacy.html">
+            
+                <a href="../chapter-laws/anonymity-and-privacy.html">
+            
+                    
+                        <b>13.1.4.</b>
+                    
+                    匿名与隐私
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.5" data-path="../chapter-laws/data-carrier.html">
+            
+                <a href="../chapter-laws/data-carrier.html">
+            
+                    
+                        <b>13.1.5.</b>
+                    
+                    数据载体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.6" data-path="../chapter-laws/myth-of-permissionless.html">
+            
+                <a href="../chapter-laws/myth-of-permissionless.html">
+            
+                    
+                        <b>13.1.6.</b>
+                    
+                    无需许可的迷思
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.7" data-path="../chapter-laws/pure-capitalism.html">
+            
+                <a href="../chapter-laws/pure-capitalism.html">
+            
+                    
+                        <b>13.1.7.</b>
+                    
+                    纯粹的资本主义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.8" data-path="../chapter-laws/token-and-security.html">
+            
+                <a href="../chapter-laws/token-and-security.html">
+            
+                    
+                        <b>13.1.8.</b>
+                    
+                    Token 与证券
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.9" data-path="../chapter-laws/signature-in-electronic-contract.html">
+            
+                <a href="../chapter-laws/signature-in-electronic-contract.html">
+            
+                    
+                        <b>13.1.9.</b>
+                    
+                    电子合同与签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../chapter-economics/">
+            
+                <a href="../chapter-economics/">
+            
+                    
+                        <b>14.1.</b>
+                    
+                    比特币的经济学
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1.1" data-path="../chapter-economics/money-is-measuring-stick.html">
+            
+                <a href="../chapter-economics/money-is-measuring-stick.html">
+            
+                    
+                        <b>14.1.1.</b>
+                    
+                    钱是一种度量尺度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.1.2" data-path="../chapter-economics/money-supply.html">
+            
+                <a href="../chapter-economics/money-supply.html">
+            
+                    
+                        <b>14.1.2.</b>
+                    
+                    比特币的供给
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.1.3" data-path="../chapter-economics/halving.html">
+            
+                <a href="../chapter-economics/halving.html">
+            
+                    
+                        <b>14.1.3.</b>
+                    
+                    减半机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.1.4" data-path="../chapter-economics/fees.html">
+            
+                <a href="../chapter-economics/fees.html">
+            
+                    
+                        <b>14.1.4.</b>
+                    
+                    手续费与流通
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.1.5" data-path="../chapter-economics/deflation.html">
+            
+                <a href="../chapter-economics/deflation.html">
+            
+                    
+                        <b>14.1.5.</b>
+                    
+                    通缩货币？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../appendix/">
+            
+                <a href="../appendix/">
+            
+                    
+                        <b>15.1.</b>
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="15.1.1" data-path="../appendix/history-of-onchain-scaling.html">
+            
+                <a href="../appendix/history-of-onchain-scaling.html">
+            
+                    
+                        <b>15.1.1.</b>
+                    
+                    扩容纷争
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.1.2" data-path="../appendix/time-line-of-satoshi.html">
+            
+                <a href="../appendix/time-line-of-satoshi.html">
+            
+                    
+                        <b>15.1.2.</b>
+                    
+                    中本聪时间线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.1.3" data-path="../appendix/faq-of-bsv.html">
+            
+                <a href="../appendix/faq-of-bsv.html">
+            
+                    
+                        <b>15.1.3.</b>
+                    
+                    BitcoinSV 常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.1.4" data-path="../appendix/bitcoin-whitepaper.html">
+            
+                <a href="../appendix/bitcoin-whitepaper.html">
+            
+                    
+                        <b>15.1.4.</b>
+                    
+                    比特币白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="_blank" rel="nofollow" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Paymail 协议</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#paymail-&#x534F;&#x8BAE;"><b></b>Paymail &#x534F;&#x8BAE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6982;&#x8FF0;---paymail"><b></b>&#x6982;&#x8FF0; - Paymail</a></li><li><span class="title-icon "></span><a href="#bsvalias-&#x534F;&#x8BAE;"><b></b>bsvalias &#x534F;&#x8BAE;</a></li><li><span class="title-icon "></span><a href="#paymail"><b></b> Paymail</a></li><li><span class="title-icon "></span><a href="#&#x6269;&#x5C55;&#x534F;&#x8BAE;"><b></b>&#x6269;&#x5C55;&#x534F;&#x8BAE;</a></li></ul></ul></div><a href="#paymail-&#x534F;&#x8BAE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#paymail-&#x534F;&#x8BAE;"><b></b>Paymail &#x534F;&#x8BAE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6982;&#x8FF0;---paymail"><b></b>&#x6982;&#x8FF0; - Paymail</a></li><li><span class="title-icon "></span><a href="#bsvalias-&#x534F;&#x8BAE;"><b></b>bsvalias &#x534F;&#x8BAE;</a></li><li><span class="title-icon "></span><a href="#paymail"><b></b> Paymail</a></li><li><span class="title-icon "></span><a href="#&#x6269;&#x5C55;&#x534F;&#x8BAE;"><b></b>&#x6269;&#x5C55;&#x534F;&#x8BAE;</a></li></ul></ul></div><a href="#paymail-&#x534F;&#x8BAE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="paymail-&#x534F;&#x8BAE;"><a name="paymail-&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#paymail-&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="paymail-&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#paymail-&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>Paymail &#x534F;&#x8BAE;</h1>
+<p>&#x6BD4;&#x7279;&#x5E01;&#x65E8;&#x5728;&#x7528;&#x4F5C;&#x70B9;&#x5BF9;&#x70B9;&#x73B0;&#x91D1;&#x3002;&#x5F53;&#x767D;&#x76AE;&#x4E66;&#x548C;&#x8282;&#x70B9;&#x8F6F;&#x4EF6;&#x53D1;&#x5E03;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x521B;&#x5EFA;&#x4E86;&#x4E24;&#x79CD;&#x6C47;&#x6B3E;&#x65B9;&#x5F0F;&#x3002;</p>
+<blockquote>
+<p>&#x6BD4;&#x7279;&#x5E01;&#x6709;&#x4E24;&#x79CD;&#x6C47;&#x6B3E;&#x65B9;&#x5F0F;&#x3002; &#x5982;&#x679C;&#x6536;&#x4EF6;&#x4EBA;&#x5728;&#x7EBF;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x4ED6;&#x4EEC;&#x7684; IP &#x5730;&#x5740;&#xFF0C;&#x5B83;&#x5C06;&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x5E76;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x516C;&#x94A5;&#x5E76;&#x53D1;&#x9001;&#x5E26;&#x6709;&#x6CE8;&#x91CA;&#x7684;&#x4EA4;&#x6613;&#x3002; &#x5982;&#x679C;&#x6536;&#x4EF6;&#x4EBA;&#x4E0D;&#x5728;&#x7EBF;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#x5230;&#x4ED6;&#x4EEC;&#x7684;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#xFF0C;&#x5373;&#x4ED6;&#x4EEC;&#x7ED9;&#x4F60;&#x7684;&#x516C;&#x94A5;&#x7684;&#x54C8;&#x5E0C;&#x3002; &#x4ED6;&#x4EEC;&#x5728;&#x4E0B;&#x6B21;&#x4E0A;&#x7EBF;&#x65F6;&#x83B7;&#x5F97;&#x5305;&#x542B;&#x8BE5;&#x4EA4;&#x6613;&#x7684;&#x533A;&#x5757;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x53D1;&#x9001;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x4E14;&#x5982;&#x679C;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x5730;&#x5740;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x4E22;&#x5931;&#x4E00;&#x4E9B;&#x9690;&#x79C1;&#x6027;&#x3002;&#x4F46;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x7528;&#x6237;&#x90FD;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x5728;&#x7EBF;&#x6216;&#x6536;&#x4EF6;&#x4EBA;&#x65E0;&#x6CD5;&#x63A5;&#x6536;&#x8FDE;&#x63A5;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x7528;&#x7684;&#x66FF;&#x4EE3;&#x65B9;&#x6848;&#x3002;--<a href="https://nakamotostudies.org/emails/bitcoin-list-bitcoin-v0-1-alpha-release-notes/" target="_blank" rel="nofollow">&#x4E2D;&#x672C;&#x806A;</a></p>
+</blockquote>
+<h2 id="&#x6982;&#x8FF0;---paymail"><a name="&#x6982;&#x8FF0;---paymail" class="anchor-navigation-ex-anchor" href="#&#x6982;&#x8FF0;---paymail"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6982;&#x8FF0;---paymail" class="anchor-navigation-ex-anchor" href="#&#x6982;&#x8FF0;---paymail"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6982;&#x8FF0; - Paymail</h2>
+<p>Paymail &#x662F;&#x73B0;&#x4EE3;&#x652F;&#x4ED8;&#x5230; IP&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x5C06;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x540D;&#x79F0;&#x9644;&#x52A0;&#x5230;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7AEF;&#x70B9;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x50CF;&#x539F;&#x59CB;&#x6BD4;&#x7279;&#x5E01;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5730;&#x5740;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x8FD9;&#x4E9B;&#x540D;&#x79F0;&#x80FD;&#x591F;&#x53D1;&#x9001;&#x4EA4;&#x6613;&#xFF0C;&#x7B7E;&#x540D;&#x548C;&#x52A0;&#x5BC6;&#x4EA4;&#x6613;&#xFF0C;&#x4EE5;&#x53CA;&#x6267;&#x884C;&#x9AD8;&#x7EA7;&#x5408;&#x540C;&#x3002;Paymail &#x8FD8;&#x4E0E;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5B8C;&#x5168;&#x517C;&#x5BB9;&#x3002;</p>
+<p>&#x7531;&#x4E8E; Paymail &#x4E5F;&#x53EF;&#x7528;&#x4E8E;&#x6258;&#x7BA1; BIP 270 &#x7AEF;&#x70B9;&#xFF0C;&#x56E0;&#x6B64; Paymail &#x4E5F;&#x662F;&#x73B0;&#x4EE3;&#x4ED8;&#x8D39;&#x65B9;&#x5F0F;&#x7684;&#x5165;&#x53E3;&#x70B9;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x4F7F;&#x7528; Miner ID &#x52A0;&#x6269;&#x5C55;&#x6765;&#x5E7F;&#x64AD;&#x548C;&#x9A8C;&#x8BC1;&#x4EA4;&#x6613;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5411;&#x77FF;&#x5DE5;&#x8BE2;&#x95EE;&#x4EA4;&#x6613;&#x662F;&#x5426;&#x6709;&#x6548;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x4F7F;&#x7528; Paymail&#xFF0C;BIP 270 &#x548C; Miner ID&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x70B9;&#x5BF9;&#x70B9;&#x4EA4;&#x6613;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x94B1;&#x5305;&#x53EF;&#x4EE5;&#x653E;&#x5F03;&#x8FD0;&#x884C;&#x8282;&#x70B9;&#x7684;&#x8981;&#x6C42;&#x3002;</p>
+<p>&#x94B1;&#x5305;&#x4E0D;&#x9700;&#x8981;&#x626B;&#x63CF;&#x533A;&#x5757;&#x94FE;&#x6765;&#x67E5;&#x627E;&#x4ED6;&#x4EEC;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x4ED6;&#x4EEC;&#x5C06;&#x76F4;&#x63A5;&#x4ECE;&#x53D1;&#x4EF6;&#x4EBA;&#x63A5;&#x6536;&#x4EA4;&#x6613;&#x3002;</p>
+<p>&#x8FD9;&#x5C06;&#x4F7F;&#x6BCF;&#x4E2A;&#x94B1;&#x5305;&#x7684;&#x8FD0;&#x8425;&#x6210;&#x672C;&#x5927;&#x5927;&#x964D;&#x4F4E;&#xFF0C;&#x540C;&#x65F6;&#x4F7F;&#x4E00;&#x5207;&#x66F4;&#x52A0;&#x7528;&#x6237;&#x53CB;&#x597D;&#x3002;</p>
+<p>&#x94B1;&#x5305;&#x5C06;&#x4E0D;&#x518D;&#x53D1;&#x9001;&#x5230;&#x5730;&#x5740;&#x3002;&#x53EA;&#x4ED8;&#x94B1;&#x3002;</p>
+<p><strong>Paymail</strong> &#x662F;&#x6BD4;&#x7279;&#x5E01; SV &#x94B1;&#x5305;&#x534F;&#x8BAE;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5141;&#x8BB8;&#x5728;&#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x94B1;&#x5305;&#x4E2D;&#x63D0;&#x4F9B;&#x4E00;&#x7EC4;&#x7B80;&#x5316;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;</p>
+<p>&#x274C;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x590D;&#x6742;&#x7684; <code>17Dx2iAnGWPJCdqVvRFr45vL9YvT86TDsn</code> &#x5730;&#x5740;</p>
+<p>&#x2705;&#x4F7F;&#x7528;&#x76F4;&#x89C2;&#x7684;&#x4ED8;&#x6B3E;&#x5904;&#x7406;&#x65B9;&#x5F0F; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>alias</span><span class="token punctuation">&gt;</span></span>@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>domain</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tld</span><span class="token punctuation">&gt;</span></span></code></p>
+<p>Paymail &#x534F;&#x8BAE;&#x7684;&#x76EE;&#x6807;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x63D0;&#x4F9B;&#x5BF9;&#x7528;&#x6237;&#x53CB;&#x597D;&#x7684;&#x53EF;&#x8BB0;&#x5FC6;&#x5F0F;&#x76EE;&#x6807;&#x652F;&#x4ED8;&#x683C;&#x5F0F;</li>
+<li>&#x65E0;&#x9700;&#x8BB8;&#x53EF;&#x7684;&#x81EA;&#x7531;&#x96C6;&#x6210;</li>
+<li>&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x6258;&#x7BA1;&#x6216;&#x59D4;&#x6258;&#x7684;&#x670D;&#x52A1;</li>
+<li>&#x81EA;&#x52A8;&#x670D;&#x52A1;&#x68C0;&#x6D4B;</li>
+<li>PKI &#x57FA;&#x7840;&#x8BBE;&#x65BD;</li>
+<li>&#x8DE8;&#x94B1;&#x5305;&#x7684;&#x4E00;&#x6B21;&#x6027;&#x6784;&#x5EFA;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x4EA4;&#x6613;&#x7684;&#x8F93;&#x51FA;&#x811A;&#x672C;</li>
+<li>&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x5F0F;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;</li>
+<li>&#x5B89;&#x5168;&#x548C;&#x7B56;&#x7565;&#x7BA1;&#x7406;</li>
+<li>&#x53EF;&#x6269;&#x5C55;&#x548C;&#x88AB;&#x53D1;&#x73B0;&#x7684;&#x80FD;&#x529B;</li>
+</ul>
+<h2 id="bsvalias-&#x534F;&#x8BAE;"><a name="bsvalias-&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#bsvalias-&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="bsvalias-&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#bsvalias-&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="http://bsvalias.org/index.html#bsvalias" target="_blank" rel="nofollow">bsvalias &#x534F;&#x8BAE;</a></h2>
+<p>&#x76F8;&#x5173;&#x534F;&#x8BAE;&#x65CF;&#x7EDF;&#x79F0;&#x4E3A; <code>bsvalias</code> &#x534F;&#x8BAE;&#x3002;&#x5728;&#x64B0;&#x5199;&#x672C;&#x6587;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><a href="http://bsvalias.org/01-brfc-specifications.html" target="_blank" rel="nofollow">BRFC &#x89C4;&#x683C;</a></li>
+<li><a href="http://bsvalias.org/02-service-discovery.html" target="_blank" rel="nofollow">&#x670D;&#x52A1;&#x53D1;&#x73B0;</a></li>
+<li><a href="http://bsvalias.org/03-public-key-infrastructure.html" target="_blank" rel="nofollow">&#x516C;&#x94A5;&#x57FA;&#x7840;&#x8BBE;&#x65BD;</a></li>
+<li><a href="http://bsvalias.org/04-payment-addressing.html" target="_blank" rel="nofollow">&#x4ED8;&#x6B3E;&#x5730;&#x5740;</a></li>
+</ul>
+<h2 id="paymail"><a name="paymail" class="anchor-navigation-ex-anchor" href="#paymail"><i class="fa fa-link" aria-hidden="true"></i></a><a name="paymail" class="anchor-navigation-ex-anchor" href="#paymail"><i class="fa fa-link" aria-hidden="true"></i></a><a href="http://bsvalias.org/index.html#Paymail" target="_blank" rel="nofollow"> Paymail</a></h2>
+<p><strong>Paymail</strong> &#x662F;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x534F;&#x8BAE;&#x7684;&#x540D;&#x79F0;&#xFF1A;</p>
+<ul>
+<li><a href="http://bsvalias.org/02-service-discovery.html" target="_blank" rel="nofollow">&#x670D;&#x52A1;&#x53D1;&#x73B0;</a></li>
+<li><a href="http://bsvalias.org/03-public-key-infrastructure.html" target="_blank" rel="nofollow">&#x516C;&#x94A5;&#x57FA;&#x7840;&#x8BBE;&#x65BD;</a></li>
+<li><a href="http://bsvalias.org/04-01-basic-address-resolution.html" target="_blank" rel="nofollow">&#x57FA;&#x672C;&#x5730;&#x5740;&#x89E3;&#x6790;</a> &#x4ECE; <a href="http://bsvalias.org/04-payment-addressing.html" target="_blank" rel="nofollow">&#x652F;&#x4ED8;&#x89E3;&#x51B3;</a> &#x65B9;&#x6848;&#x7EC4;</li>
+</ul>
+<p>&#x8BE5; <strong>Paymail</strong> &#x54C1;&#x724C;&#x88AB;&#x4FDD;&#x7559;&#x7528;&#x4E8E;&#x4EA7;&#x54C1;&#x548C;&#x670D;&#x52A1;&#xFF0C;&#x5728;&#x6700;&#x4F4E;&#x9650;&#x5EA6;&#xFF0C;&#x5B9E;&#x73B0;&#x6BCF;&#x4E2A;&#x4EE5;&#x4E0A;&#x3002;</p>
+<h2 id="&#x6269;&#x5C55;&#x534F;&#x8BAE;"><a name="&#x6269;&#x5C55;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#&#x6269;&#x5C55;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6269;&#x5C55;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#&#x6269;&#x5C55;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="http://bsvalias.org/index.html#extension-protocols" target="_blank" rel="nofollow">&#x6269;&#x5C55;&#x534F;&#x8BAE;</a></h2>
+<p>&#x6839;&#x636E; <a href="http://bsvalias.org/01-brfc-specifications.html" target="_blank" rel="nofollow">BRFC &#x89C4;&#x8303;</a> &#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5EFA;&#x8BAE;&#x6269;&#x5C55; <code>bsvalias</code> &#x548C;&#x4ED8;&#x8D39;&#x90AE;&#x4EF6;&#x534F;&#x8BAE;&#xFF0C;&#x5E76;&#x4E14;&#x6839;&#x636E;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x534F;&#x8BAE;&#x7684; <a href="http://bsvalias.org/02-03-capability-discovery.html" target="_blank" rel="nofollow">&#x80FD;&#x529B;&#x53D1;&#x73B0;</a> &#x90E8;&#x5206;&#xFF0C;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x5BF9;&#x6269;&#x5C55;&#x7684;&#x652F;&#x6301;&#x4EE5;&#x5141;&#x8BB8;&#x8DE8;&#x94B1;&#x5305;&#x8FC7;&#x7A0B;&#x3002;<a href="http://bsvalias.org/02-service-discovery.html" target="_blank" rel="nofollow"></a></p>
+<p>&#x6269;&#x5C55;&#x534F;&#x8BAE;&#x662F;&#x672A;&#x5305;&#x542B;&#x5728;&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x6838;&#x5FC3; Paymail &#x96C6;&#x4E2D;&#x7684;&#x534F;&#x8BAE;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x4E0E; <code>bsvalias</code> &#x534F;&#x8BAE;&#x548C; Paymail &#x5B9E;&#x73B0;&#x5B8C;&#x5168;&#x517C;&#x5BB9;&#x3002;&#x76EE;&#x524D;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x4F8B;&#x5B50;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><a href="http://bsvalias.org/04-02-sender-validation.html" target="_blank" rel="nofollow">&#x53D1;&#x4EF6;&#x4EBA;&#x9A8C;&#x8BC1;</a></li>
+<li><a href="http://bsvalias.org/04-03-receiver-approvals.html" target="_blank" rel="nofollow">&#x63A5;&#x6536;&#x8005;&#x6279;&#x51C6;</a></li>
+<li><a href="http://bsvalias.org/04-04-payto-protocol-prefix.html" target="_blank" rel="nofollow">PayTo &#x534F;&#x8BAE;&#x524D;&#x7F00;</a></li>
+<li>MultiSig &#x6388;&#x6743;</li>
+<li>&#x9608;&#x503C;&#x7B7E;&#x540D;&#x7EC4;&#x79D8;&#x5BC6;&#x8BBE;&#x7F6E;&#x548C;&#x6D88;&#x606F;&#x7B7E;&#x540D;</li>
+<li>&#x4ED8;&#x6B3E;&#x6E20;&#x9053;</li>
+</ul>
+<p></p><div id="page-footer" class="localized-footer"><hr><footer class="page-footer"><span class="copyright">&#xA9;2019 - Metanet.press all right reserved&#xFF0C;</span><span class="footer-modification pull-right">Donate: 1MzziGBa7tNNzMwVJMPEjAfM1wRcvSGZu5<span></span></span></footer>
+
+<p><script src="https://www.moneybutton.com/moneybutton.js"></script> </p><div class="money-button" data-to="metanetpress@moneybutton.com" data-amount="0.005" data-currency="BSV" data-editable="false"></div><p></p>
+</div><p></p>
+
+
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hd-wallet.html" class="navigation navigation-prev " aria-label="Previous page: HD 钱包">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="recommendations.html" class="navigation navigation-next " aria-label="Next page: 比特币钱包推荐">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Paymail 协议","level":"4.1.3","depth":2,"next":{"title":"比特币钱包推荐","level":"4.1.4","depth":2,"path":"chapter-wallet/recommendations.md","ref":"chapter-wallet/recommendations.md","articles":[{"title":"打点钱包","level":"4.1.4.1","depth":3,"path":"chapter-wallet/ddpurse.md","ref":"chapter-wallet/ddpurse.md","articles":[]},{"title":"MoneyButton","level":"4.1.4.2","depth":3,"path":"chapter-wallet/moneybutton.md","ref":"chapter-wallet/moneybutton.md","articles":[]},{"title":"Simply Cash","level":"4.1.4.3","depth":3,"path":"chapter-wallet/simply-cash.md","ref":"chapter-wallet/simply-cash.md","articles":[]}]},"previous":{"title":"HD 钱包","level":"4.1.2","depth":2,"path":"chapter-wallet/hd-wallet.md","ref":"chapter-wallet/hd-wallet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","-lunr","-search","-sharing","ancre-navigation","anchor-navigation-ex","alerts","auto-scroll-table","chapter-fold","-disqus","-donate","favicon","expandable-chapters","ga","github","-image-captions","lightbox","localized-footer","myseo","-pageview-count","prism","prism-themes","search-pro","sharing-plus","sitemap-general","splitter","-tbfed-pagefooter","theme-comscore"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2019 - Metanet.press","modify_label":"Updated at:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"shortName":"imcoddy"},"github":{"url":"https://github.com/imcoddy/rebirth-of-bitcoin"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"localized-footer":{"filename":"./FOOTER.md","hline":"true"},"donate":{"wechat":"/images/donation.png","title":"","button":"赏","wechatText":"BSV 打赏"},"sitemap-general":{"prefix":"https://metanet.press"},"myseo":{"description":"本项目为「比特币重生：重返创世纪」计划，旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币 (BSV) 的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「创世纪」升级计划的到来。","keywords":"BSV,BSV社区,BitcoinSV社区,BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,比特币现金,比特币SV,区块链,中本聪愿景","titlePrefix":"","titleSuffix":" - Metanet.press"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"/images/favicon.ico","bookmark":"/images/favicon.ico","appleTouch":"/images/apple-touch-icon.png"},"lightbox":{"jquery":true},"theme-comscore":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"https://github.com/imcoddy/rebirth-of-bitcoin","types":["star","watch","fork"],"size":"small"},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"ga":{"configuration":"auto","token":"UA-135053792-3"},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","twitter","weibo","messenger","qq","qzone","weibo","pocket","whatsapp"],"douban":true,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"imcoddy <imcoddy@gmail.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"比特币重生：重返创世纪","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null}},"gitbook":"*","description":"本书旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币 (BSV) 的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「创世纪」升级计划的到来。","extension":null},"file":{"path":"chapter-wallet/paymail.md","mtime":"2019-09-11T02:09:27.754Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-11T02:10:32.703Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
